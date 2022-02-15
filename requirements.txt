@@ -1,0 +1,2 @@
+# requirements for norminette written in python
+norminette==3.3.51
