@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 17:45:36 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/15 22:33:57 by kboonchu         ###   ########.fr       */
+/*   Created: 2022/02/15 22:21:09 by kboonchu          #+#    #+#             */
+/*   Updated: 2022/02/15 22:33:48 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-
-size_t	ft_strlen(const char *s);
-char	*ft_strtrim(char const *s1, char const *set);
-char	*ft_strchr(const char *s, int c);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-int		ft_isdigit(int c);
-int		ft_atoi(const char *str);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
+}
