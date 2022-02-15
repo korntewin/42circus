@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 23:28:34 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/15 22:18:12 by kboonchu         ###   ########.fr       */
+/*   Created: 2022/02/14 17:45:36 by kboonchu          #+#    #+#             */
+/*   Updated: 2022/02/15 22:07:43 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-char	*ft_strtrim(char const *s1, char const *set)
-{
-	int		size;
-	int		st;
-	int		end;
-	char	*out;
+# include <stdlib.h>
 
-	st = 0;
-	size = ft_strlen(s1);
-	end = size - 1;
-	while (ft_strchr(set, s1[st]) && st < end)
-		st++;
-	while (ft_strchr(set, s1[end]) && end >= 0)
-		end--;
-	out = ft_substr(s1, st, end - st + 1);
-	return (out);
-}
+size_t	ft_strlen(const char *s);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strchr(const char *s, int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+#endif

@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 23:28:34 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/15 22:18:12 by kboonchu         ###   ########.fr       */
+/*   Created: 2022/02/15 22:04:14 by kboonchu          #+#    #+#             */
+/*   Updated: 2022/02/15 22:17:43 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int		size;
-	int		st;
-	int		end;
-	char	*out;
+	char	*output;
+	int		i;
 
-	st = 0;
-	size = ft_strlen(s1);
-	end = size - 1;
-	while (ft_strchr(set, s1[st]) && st < end)
-		st++;
-	while (ft_strchr(set, s1[end]) && end >= 0)
-		end--;
-	out = ft_substr(s1, st, end - st + 1);
-	return (out);
+	output = (char *)malloc(sizeof(char) * len);
+	if (output == NULL)
+		return (NULL);
+	i = 0;
+	while ((size_t) i < len && s[i + start] != '\0')
+	{
+		output[i] = s[i + start];
+		i++;
+	}
+	output[i] = '\0';
+	return (output);
 }
