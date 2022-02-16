@@ -8,11 +8,11 @@
 4. ~~isascii~~
 5. ~~isprint~~
 6. ~~strlen~~
-7. memset
+7. ~~memset~~
 8. bzero
 9. memcpy
 10. memmove
-11. strlcpy
+11. ~~strlcpy~~
 12. strlcat
 13. toupper
 14. tolower
