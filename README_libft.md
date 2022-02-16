@@ -1,5 +1,4 @@
 # README FOR libft
-
 ## All functions that is mandatory
 
 1. ~~isalpha~~
@@ -13,9 +12,9 @@
 9. memcpy
 10. memmove
 11. ~~strlcpy~~
-12. strlcat
-13. toupper
-14. tolower
+12. ~~strlcat~~
+13. ~~toupper~~
+14. ~~tolower~~
 15. ~~strchr~~
 16. strrchr
 17. strncmp
