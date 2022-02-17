@@ -6,7 +6,7 @@
 #    By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 17:45:40 by kboonchu          #+#    #+#              #
-#    Updated: 2022/02/16 23:38:45 by kboonchu         ###   ########.fr        #
+#    Updated: 2022/02/17 21:06:29 by kboonchu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRCS = ft_strchr.c ft_strtrim.c ft_strlen.c ft_substr.c ft_isdigit.c ft_atoi.c ft_isalpha.c ft_isascii.c \
 		ft_isalnum.c ft_isprint.c ft_strlcpy.c ft_memset.c ft_toupper.c ft_tolower.c ft_strlcat.c ft_bzero.c \
-		ft_memcpy.c
+		ft_memcpy.c ft_memmove.c
 OBJS = ${SRCS:.c=.o}
 INCLUDES = libft.h
 
