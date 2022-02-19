@@ -16,8 +16,8 @@
 13. ~~toupper~~
 14. ~~tolower~~
 15. ~~strchr~~
-16. strrchr
-17. strncmp
+16. ~~strrchr~~
+17. ~~strncmp~~
 18. memchr
 19. memcmp
 20. strnstr
