@@ -19,7 +19,7 @@
 16. ~~strrchr~~
 17. ~~strncmp~~
 18. ~~memchr~~
-19. memcmp
+19. ~~memcmp~~
 20. strnstr
 21. ~~atoi~~
 22. calloc
