@@ -23,7 +23,7 @@
 20. ~~strnstr~~
 21. ~~atoi~~
 22. ~~calloc~~
-23. strdup
+23. ~~strdup~~
 
 ## All functions that are part II
 
