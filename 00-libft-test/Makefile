@@ -6,7 +6,7 @@
 #    By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/15 21:23:15 by kboonchu          #+#    #+#              #
-#    Updated: 2022/02/20 12:20:39 by kboonchu         ###   ########.fr        #
+#    Updated: 2022/02/20 12:51:01 by kboonchu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ clean:
 test: clean
 	@cd ../00-libft && make
 	@$(CC) $(CFLAGS) -lft -L ../00-libft -I ../00-libft -o $(NAME) main_$(fun).c
-	@./temp
+	@./temp | cat -e
 
 test-leak: clean
 	@cd ../00-libft && make

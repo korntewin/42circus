@@ -28,7 +28,7 @@
 ## All functions that are part II
 
 1. ~~ft_substr~~
-2. ft_strjoin
+2. ~~ft_strjoin~~
 3. ~~ft_strtrim~~
 4. ft_split
 5. ft_itoa
