@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 23:01:43 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/15 23:03:52 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/22 22:57:10 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' || c <= 'z'))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);
 }
