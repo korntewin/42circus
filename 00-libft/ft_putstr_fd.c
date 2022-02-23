@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_putchar_fd.c                                  :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/23 17:56:13 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/23 18:20:43 by kboonchu         ###   ########.fr       */
+/*   Created: 2022/02/23 18:16:23 by kboonchu          #+#    #+#             */
+/*   Updated: 2022/02/23 18:21:50 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
-int	main(void)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int	fd;
-
-	fd = open("./test_putchar_fd", O_WRONLY | O_CREAT | O_APPEND, 0777);
-	ft_putchar_fd('G', fd);
-	ft_putchar_fd('G', fd);
-	ft_putchar_fd('W', fd);
-	ft_putchar_fd('P', fd);
-	close(fd);
+	while (*s != '\0')
+		write(fd, s++, 1);
 }
