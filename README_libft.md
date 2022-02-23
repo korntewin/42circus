@@ -37,7 +37,7 @@
 8. ~~ft_putchar_fd~~
 9. ~~ft_putstr_fd~~
 10. ~~ft_putendl_fd~~
-11. ft_putnbr_fd
+11. ~~ft_putnbr_fd~~
 
 ## All functions that are bonus
 Link list
