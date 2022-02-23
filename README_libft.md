@@ -33,7 +33,7 @@
 4. ~~ft_split~~
 5. ~~ft_itoa~~
 6. ~~ft_strmapi~~
-7. ft_striteri
+7. ~~ft_striteri~~
 8. ft_putchar_fd
 9. ft_putstr_fd
 10. ft_putendl_fd
