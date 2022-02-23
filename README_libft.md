@@ -31,7 +31,7 @@
 2. ~~ft_strjoin~~
 3. ~~ft_strtrim~~
 4. ~~ft_split~~
-5. ft_itoa
+5. ~~ft_itoa~~
 6. ft_strmapi
 7. ft_striteri
 8. ft_putchar_fd
