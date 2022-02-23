@@ -43,10 +43,10 @@
 Link list
 1. ~~ft_lstnew~~
 2. ~~ft_lstadd_front~~
-3. ft_listsize
-4. ft_lstlast
-5. ft_lstadd_back
-6. ft_lstdelone
-7. ft_lstclear
-8. ft_lstiter
-9. ft_lstmap
+3. ~~ft_listsize~~
+4. ~~ft_lstlast~~
+5. ~~ft_lstadd_back~~
+6. ~~ft_lstdelone~~
+7. ~~ft_lstclear~~
+8. ~~ft_lstiter~~
+9. ~~ft_lstmap~~

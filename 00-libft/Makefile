@@ -6,7 +6,7 @@
 #    By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 17:45:40 by kboonchu          #+#    #+#              #
-#    Updated: 2022/02/23 22:58:15 by kboonchu         ###   ########.fr        #
+#    Updated: 2022/02/23 23:44:03 by kboonchu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ SRCS = ft_strchr.c ft_strtrim.c ft_strlen.c ft_substr.c ft_isdigit.c ft_atoi.c f
 		ft_putendl_fd.c ft_putnbr_fd.c
 OBJS = ${SRCS:.c=.o}
 
-BSRCS = ft_lstnew.c ft_lstadd_front.c
+BSRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstadd_back.c ft_lstlast.c ft_lstdelone.c ft_lstclear.c \
+		ft_lstiter.c ft_lstmap.c
 BOBJS = $(BSRCS:.c=.o)
 
 INCLUDES = libft.h
