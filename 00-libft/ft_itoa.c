@@ -6,12 +6,11 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 13:43:53 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/23 16:41:48 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/23 17:53:25 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	rev(char *o, int i, int size, int sign)
 {
