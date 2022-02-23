@@ -41,7 +41,7 @@
 
 ## All functions that are bonus
 Link list
-1. ft_lstnew
+1. ~~ft_lstnew~~
 2. ft_lstadd_front
 3. ft_listsize
 4. ft_lstlast
