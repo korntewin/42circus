@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 13:43:53 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/23 17:53:25 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 00:08:02 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	rev(char *o, int i, int size, int sign)
 		offset = sign;
 	else
 		offset = sign + 1;
-	while (i < (size + sign) / 2)
+	while (i < (size + offset) / 2)
 	{
 		temp_c = o[i];
 		o[i] = o[size + offset - 1 - i];
