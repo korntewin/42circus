@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:35:54 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/24 20:02:05 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 20:14:43 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,19 @@ int	main(void)
 	i = ft_strlcat(dest, "123", 0);
 	printf("libfttestter:%d\n", i);
 	printf("libftstring:%d\n", strcmp(dest, ""));
+
+	memset(dest, 0, 30);
+	src = (char *)"AAAAAAAAA";
+	dest[0] = 'B';
+	ft_strlcat(dest, src, 0);
+	dest[0] = 'B';
+	ft_strlcat(dest, src, 1);
+	memset(dest, 'B', 4);
+	ft_strlcat(dest, src, 3);
+	ft_strlcat(dest, src, 6);
+	memset(dest, 'C', 5);
+	ft_strlcat(dest, src, -1);
+	printf("src:%s\n", src);
+	printf("dest:%s\n", dest);
+	// strcmp(dest, "CCCCCAAAAAAAAA");
 }

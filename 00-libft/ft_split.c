@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 20:54:35 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/24 18:25:35 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 20:46:53 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@ static size_t	find_split_size(char const *s, char c)
 
 	split_size = 0;
 	t = (char *)s;
-	while (t != NULL && *t == c)
-		t++;
-	while (t != NULL)
+	while (*t != '\0')
 	{
-		t = ft_strchr(t, c);
-		while (t != NULL && *t == c)
+		while (*t != '\0' && *t != c)
+			t++;
+		while (*t != '\0' && *t == c)
 			t++;
 		split_size++;
 	}
