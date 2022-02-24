@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 23:28:34 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/15 22:18:12 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 17:07:51 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 		st++;
 	while (ft_strchr(set, s1[end]) && end >= 0)
 		end--;
+	if (end < st)
+	{
+		out = (char *)malloc(sizeof(char) * 1);
+		out[0] = '\0';
+		return (out);
+	}
 	out = ft_substr(s1, st, end - st + 1);
 	return (out);
 }

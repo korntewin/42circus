@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:41:11 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/17 23:03:13 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 18:28:54 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,13 @@ int	main(void)
 	out = strrchr(str, c);
 	printf("str:%s,chr:%c,output:%s\n\n", str, c, out);
 	c = 'A';
+	printf("=== Ft ===\n");
+	out = ft_strrchr(str, c);
+	printf("str:%s,chr:%c,output:%s\n", str, c, out);
+	printf("=== Original ===\n");
+	out = strrchr(str, c);
+	printf("str:%s,chr:%c,output:%s\n\n", str, c, out);
+	c = 0;
 	printf("=== Ft ===\n");
 	out = ft_strrchr(str, c);
 	printf("str:%s,chr:%c,output:%s\n", str, c, out);

@@ -6,7 +6,7 @@
 /*   By: kboonchu <kboonchu@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 21:52:45 by kboonchu          #+#    #+#             */
-/*   Updated: 2022/02/22 22:04:40 by kboonchu         ###   ########.fr       */
+/*   Updated: 2022/02/24 17:14:06 by kboonchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,13 @@ int	main(void)
 	printf("str1:%s\n", test[0]);
 	src = "T  ";
 	c = ' ';
+	test = ft_split(src, c);
+	printf("Total str:%s\n", src);
+	printf("Split str:%c\n", c);
+	printf("str1:%s\n", test[0]);
+	printf("str2:%s\n", test[1]);
+	src = "***salut****!**";
+	c = '*';
 	test = ft_split(src, c);
 	printf("Total str:%s\n", src);
 	printf("Split str:%c\n", c);
